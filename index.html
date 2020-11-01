@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Caesar Cipher - P001 </title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module"></script>
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
+    <section class="mother" id="root">
+      <h1 id="titulo"> Diário Secreto de um(a) Adolescente &#9996; </h1>
+      <h2 id="saudacao"> Bem-Vindo(a)</h2>
+      <div id="area1">
+        <p> </p>
+      </div>
+      <div>
+        <input class="txtInput" id="txtSringC" type="text" name="InputTxtC" value="">
+        <input class="btnEncode" id="btnCodif"type="button" name="btn-encode" value="Criptografar">
+        <input class="btnDecode" id="btnDescodif"type="button" name="btn-decode" value="Descriptografar">
+        <label>Chave de Deslocamento</label>
+        <select id="resOffset" name="menuOffset">
+          <option value=1>1</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+          <option value=5>5</option>
+          <option value=6>6</option>
+          <option value=7>7</option>
+          <option value=8>8</option>
+          <option value=9>9</option>
+          <option value=10>10</option>
+        </select>
+        <div id="res">Resultado</div>
+      </div>
+    </section>
   </body>
 </html>
+
+
+<!--<input class="txtInput" id="resOffset" type="text" name="InputOffset" value=""> -->
