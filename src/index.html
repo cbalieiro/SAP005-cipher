@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher - P001 </title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js" type="module"></script>
-  </head>
-  <body>
-    <section class="mother" id="root">
-      <h1 id="titulo"> Diário Secreto de um(a) Adolescente &#9996; </h1>
-      <h2 id="saudacao"> Bem-Vindo(a)</h2>
-      <div id="area1">
-        <p> </p>
-      </div>
-      <div>
-        <input class="txtInput" id="txtSringC" type="text" name="InputTxtC" value="">
-        <input class="btnEncode" id="btnCodif"type="button" name="btn-encode" value="Criptografar">
-        <input class="btnDecode" id="btnDescodif"type="button" name="btn-decode" value="Descriptografar">
-        <label>Chave de Deslocamento</label>
-        <select id="resOffset" name="menuOffset">
-          <option value=1>1</option>
-          <option value=2>2</option>
-          <option value=3>3</option>
-          <option value=4>4</option>
-          <option value=5>5</option>
-          <option value=6>6</option>
-          <option value=7>7</option>
-          <option value=8>8</option>
-          <option value=9>9</option>
-          <option value=10>10</option>
-        </select>
-        <div id="res">Resultado</div>
-      </div>
-    </section>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher - P001 </title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" type="module"></script>
+</head>
+
+<body>
+  <section class="mother" id="root">
+    <!--Criei essa seção exclusivamente para o cabeçalhos e tópicos -->
+    <header>
+      <h1 id="titulo"> Diário Secreto &#9996; </h1>
+    </header>
+  </section>
+  <div class="boxes" id="container">
+    <div class="boxes" id="area1">
+      <article>
+        <h2>Como o <em><strong>"Diário Secreto"</strong></em> funciona? E quais os seus benefícios?</h2>
+        <p>Escrever um diário pode ser uma prática terapêutica muito eficaz e barata.</p>
+        <p>Ao realizar pesquisas na internet, encontramos diversos artigos sobre seus benefícios. Exemplo:</p>
+        <ul>
+          <li>Auxilia na Saúde Mental.</li>
+          <li>Ajuda estabelecer planos.</li>
+          <li>Auxilia na Organização Pessoal.</li>
+          <li>Exercitar a escrita.</li>
+        </ul>
+        <p>Enfim, são inúmeros os benefícios e vantagens! Porém, quantas pessoas se sentem inseguras em registrar
+          informações
+          íntimas e secretas em um papel ou em uma plataforma sem a garantia de exposição?
+        </p>
+        <p>Pensando nisso, criamos um diário que pode ser criptografado. Em outras palavras, pode ser modificado com a
+          intenção de “ocultar” o conteúdo original afim de garantir sua integridade e privacidade.
+        </p>
+      </article>
+    </div>
+    <div class="boxes" id="area2">
+      <label>
+        <h3>Insira seus segredos abaixo:</h3>
+      </label>
+      <input class="txtInput" id="txtSringC" type="text" value="">
+      <input class="botoes" id="btnEncode" type="button" value="Criptografar">
+      <input class="botoes" id="btnDecode" type="button" value="Descriptografar">
+      <br><label>Chave de Deslocamento</label>
+      <select id="resOffset" name="menuOffset">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <div class="txtResult" id="txtRes">Resultado</div>
+      <label>Deseja Salvar?</label>
+      <input type="button" value="Sim">
+      <input type="button" value="Não">
+    </div>
+    <div class="boxes" id="area3">
+      <input type="date">
+      <input type="text">
+    </div>
+  </div>
+</body>
+
 </html>
-
-
-<!--<input class="txtInput" id="resOffset" type="text" name="InputOffset" value=""> -->
