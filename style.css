@@ -1,0 +1,43 @@
+body{
+    background-color: #E2DCDE;
+
+}
+.mother {
+    margin: 0mm;
+    background-color:#2D2D34;
+    height: 180px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+#titulo{
+    color:#B97375;
+    font-style: inherit;
+    font-size:xx-large;
+}
+
+#container{
+    margin:5mm;
+    width: 100%;
+    border-color: blue;
+}
+
+.boxes {
+    margin: 2mm;
+    display: inline-block;
+    width: 30%;
+    height:300px;
+    vertical-align: top;
+    justify-content: space-around;
+    font-size: 92%;
+}
+
+.txtInput{
+
+    width: 100%;
+    height: 200px;
+}
+
+.txtResult{
+    background-color: white;}
