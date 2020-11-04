@@ -1,23 +1,23 @@
-import cipher from './cipher.js';
-//console.log(cipher);
+import cipher from './cipher.js'
+let resultadoDisplay = window.document.getElementById('txtRes');
 
-const btnCriptografar = window.document.getElementById('btnEncode');
-const btnDescriptografar = window.document.getElementById('btnDecode');
+function chamaEncode() {
+  const textoInput = window.document.getElementById('txtSringE').value.toUpperCase();
+  const offsetInput = Number(window.document.getElementById('offsetEncode').value);
+  const codificado = cipher.encode(offsetInput, textoInput);
+  resultadoDisplay.innerHTML = codificado;
+  return codificado
+};
 
-let res = window.document.getElementById('txtRes');
+function chamaDecode() {
+  const textoInput = window.document.getElementById('txtSringD').value.toUpperCase();
+  const offsetInput = Number(window.document.getElementById('offsetDecode').value);
+  const decodificado = cipher.decode(offsetInput, textoInput);
+  resultadoDisplay.innerHTML = decodificado;
+  return decodificado
+};
 
-btnCriptografar.addEventListener("click", function chamaEncode() {
-  let tCod = window.document.getElementById('txtSringC').value.toUpperCase();
-  let offCod = Number(window.document.getElementById('resOffset').value);
-  const codificado = cipher.encode(offCod, tCod);
-  res.innerHTML = codificado;
-}
-);
+window.document.getElementById('btnEncode').addEventListener("click", chamaEncode);
+window.document.getElementById('btnDecode').addEventListener("click", chamaDecode);
 
-btnDescriptografar.addEventListener("click", function chamaDecode() {
-  let tCod = window.document.getElementById('txtSringC').value.toUpperCase();
-  let offCod = Number(window.document.getElementById('resOffset').value);
-  const codificado = cipher.decode(offCod, tCod);
-  res.innerHTML = codificado;
-}
-); 
+

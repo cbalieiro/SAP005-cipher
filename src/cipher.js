@@ -5,7 +5,7 @@ const cipher = {
     let textoC = "";
     if(typeof offset == 'number' && typeof string == 'string'){
     for(let i = 0; i < string.length; i++)  
-    {textoC += String.fromCharCode(Math.abs((string.charCodeAt(i)+65 + offset)%26)+65);}
+    {textoC += String.fromCharCode(Math.abs((string.charCodeAt(i)-65 + offset)%26)+65);}
   } else {
     throw new TypeError();
   }
